@@ -11,28 +11,31 @@ function Navbar() {
     }
 
     return (
-        <nav className='flex justify-between items-center bg-blue-700 text-white py-4 px-6 border-b border-blue-800'>
-            <Link to='/' className='text-3xl font-bold hover:text-blue-300'>
-                <h1>Test</h1>
+        <nav className='flex items-center justify-between bg-gradient-to-r from-blue-800 to-teal-700 text-white py-4 px-6 border-b border-blue-900 shadow-lg'>
+            <Link to='/' className='text-4xl font-extrabold hover:text-blue-300 tracking-wider'>
+                <h1>Home</h1>
             </Link>
-            <ul className='flex gap-4'>
+
+            <h1 className='text-4xl font-extrabold tracking-wider'>NoSQL-DB Exploit</h1> {/* Added centered title */}
+
+            <ul className='flex gap-6 text-lg'>
                 {isUserSignedIn ? (
                     <>
-                        <Link to='/account' className='py-2 px-4 hover:bg-blue-600 rounded-md transition'>
+                        <Link to='/account' className='py-2 px-4 hover:bg-blue-700 rounded-lg transition duration-300 ease-in-out'>
                             <li>Account</li>
                         </Link>
                         <li>
-                            <button onClick={handleSignOut} className='py-2 px-4 bg-red-600 hover:bg-red-700 rounded-md transition'>
+                            <button onClick={handleSignOut} className='py-2 px-4 bg-red-600 hover:bg-red-800 rounded-lg transition duration-300 ease-in-out'>
                                 Sign Out
                             </button>
                         </li>
                     </>
                 ) : (
                     <>
-                        <Link to='/login' className='py-2 px-4 hover:bg-blue-600 rounded-md transition'>
+                        <Link to='/login' className='py-2 px-4 hover:bg-blue-700 rounded-lg transition duration-300 ease-in-out'>
                             <li>Login</li>
                         </Link>
-                        <Link to='/signup' className='py-2 px-4 hover:bg-blue-600 rounded-md transition'>
+                        <Link to='/signup' className='py-2 px-4 hover:bg-blue-700 rounded-lg transition duration-300 ease-in-out'>
                             <li>Signup</li>
                         </Link>
                     </>
