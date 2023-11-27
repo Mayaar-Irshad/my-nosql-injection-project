@@ -42,41 +42,39 @@ function Login() {
 
 
   return (
-    <div className='w-full h-screen flex'>
-         <div className='w-[50%] h-[100%] bg-[#1a1a1a] text-white flex justify-center items-center'>
-            <form className='text-center border rounded-lg w-[600px] h-[400px] p-9'
-            onSubmit={handleLogin}
-            >
-                 {/*Username Input */}
-                 <label>Username</label>
-                <br />
-                <input className='w-[400px] h-[40px] rounded-xl bg-zinc-700 p-2'
-                type='text'
-                placeholder='Username'
-                value={username}
-                onChange={(e) => setUsername(e.target.value)} />
-                <br />
-                <br />
-                 {/* Password Input */}
-                 <label>Password</label>
-                <br />
-                <input className='w-[400px] h-[40px] rounded-xl bg-zinc-700 p-2'
-                type='password'
-                placeholder='Password'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)} />
-                <br />
-                <br />
-                {/* Button */}
-                <button className='w-[200px] h-[50px] border hover:bg-teal-900'
-                type='submit'>Login</button>
-            </form>
+        <div className='w-full h-screen flex'>
+            <div className='w-1/2 h-full bg-gray-800 text-white flex justify-center items-center'>
+                <form className='text-center border border-gray-600 rounded-lg w-[600px] h-[400px] p-9 shadow-xl'
+                      onSubmit={handleLogin}>
+                    {/* Username Input */}
+                    <label className='text-lg font-semibold'>Username</label>
+                    <br />
+                    <input className='w-[400px] h-10 mt-2 mb-4 rounded-xl bg-gray-700 p-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500'
+                           type='text'
+                           placeholder='Username'
+                           value={username}
+                           onChange={(e) => setUsername(e.target.value)} />
+                    <br />
+                    {/* Password Input */}
+                    <label className='text-lg font-semibold'>Password</label>
+                    <br />
+                    <input className='w-[400px] h-10 mt-2 mb-4 rounded-xl bg-gray-700 p-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500'
+                           type='password'
+                           placeholder='Password'
+                           value={password}
+                           onChange={(e) => setPassword(e.target.value)} />
+                    <br />
+                    {/* Button */}
+                    <button className='w-48 h-12 mt-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'
+                            type='submit'>Login</button>
+                </form>
+            </div>
+            <div className='w-1/2 h-full flex justify-center items-center bg-teal-800'>
+                <h2 className='text-3xl text-white font-bold'>Login</h2>
+            </div>
         </div>
-        <div className='w-[50%] h-[100%] flex justify-center items-center bg-teal-800'>
-            <h2 className='text-3xl text-white '>Login</h2>
-        </div>
-    </div>
-  )
+    );
 }
+
 
 export default Login

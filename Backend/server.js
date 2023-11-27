@@ -51,7 +51,6 @@ app.post('/register', async (req, res) => {
     }
 });
 
-
 //GET Registered Users
 app.get('/register', async (req, res) => {
     try {
@@ -62,7 +61,6 @@ app.get('/register', async (req, res) => {
         res.status(500).json({ error: 'Unable to get users' })
     }
 })
-
 
 // LOGIN
 app.post('/login', async (req, res) => {
