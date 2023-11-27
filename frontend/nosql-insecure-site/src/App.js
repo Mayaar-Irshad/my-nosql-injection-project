@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
-import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import Login from './pages/Login'
-import SignUp from './pages/SignUp'
-import Account from './pages/Account'
+import Home from './pages/home'
+import Login from './pages/login'
+import SignUp from './pages/signUp'
+import Account from './pages/account'
+import Navbar from './components/Navbar';
 
 function App() {
   const isUserSignedIn = !!localStorage.getItem('token')
