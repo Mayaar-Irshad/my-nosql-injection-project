@@ -5,6 +5,7 @@ import Login from './pages/login'
 import SignUp from './pages/signUp'
 import Account from './pages/account'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const isUserSignedIn = !!localStorage.getItem('token')
@@ -18,6 +19,7 @@ function App() {
         <Route path='/signup' element={<SignUp />} />
         {isUserSignedIn && <Route path='/account' element={<Account />} />}
       </Routes>
+      <Footer />
     </div>
   );
 }
