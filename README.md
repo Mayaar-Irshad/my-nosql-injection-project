@@ -36,11 +36,11 @@ This website is designed as an educational platform to demonstrate the vulnerabi
 
 4. Start the development server:
     ```
-      npm start
+      npm run start
     ```
 
 ---
-- To run backend server, follow these steps:
+- To run the Backend server, follow these steps:
 
 ### Backend
 
