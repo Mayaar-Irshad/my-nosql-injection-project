@@ -30,13 +30,13 @@ This website is designed as an educational platform to demonstrate the vulnerabi
 
       ```
 3. Install dependencies:
-  ```
+    ```
     npm install
-  ```
+    ```
 
 4. Start the development server:
     ```
-      npm run start
+    npm run start
     ```
 
 ---
@@ -52,13 +52,13 @@ This website is designed as an educational platform to demonstrate the vulnerabi
 
       ```
 3. Install dependencies:
-  ```
-    npm install
-  ```
+     ```
+     npm install
+     ```
 
 4. Start the backend server:
     ```
-      node server.js
+    node server.js
 
 ----
     
