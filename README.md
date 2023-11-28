@@ -5,7 +5,7 @@ This website is designed as an educational platform to demonstrate the vulnerabi
 
 ## Features
 
-
+- This website is built completely in the MERN stack
 - Home Page with educational content about NoSQL injection
 - Login and Signup Pages for user authentication
 - Account Page to view user details
